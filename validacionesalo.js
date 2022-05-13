@@ -1,11 +1,12 @@
 $(document).ready(function () {
     //Validacion Inicio Sesion
     $("#email").on("input", function () {
-        if ($("#email").val() == "") {
-            $("#mensajemail").html("El Email es obligatorio!");
-        } else {
-            $("#mensajemail").html("");
+        if($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
+            $("#mensajemail").html("El Email es incorrecto!");
+            return false;
         }
+
+        $("#mensajemail").html("");
     });
     $("#contra").on("input", function () {
         if ($("#contra").val().length < 8) {
@@ -16,11 +17,12 @@ $(document).ready(function () {
     });
     //Validacion Registro
     $("#email2").on("input", function () {
-        if ($("#email2").val() == "") {
-            $("#mensajemail2").html("El Email es obligatorio!");
-        } else {
-            $("#mensajemail2").html("");
+        if($("#email2").val().indexOf('@', 0) == -1 || $("#email2").val().indexOf('.', 0) == -1) {
+            $("#mensajemail2").html("El Email es incorrecto!");
+            return false;
         }
+
+        $("#mensajemail2").html("");
     });
     $("#user").on("input", function () {
         if ($("#user").val() == "") {
