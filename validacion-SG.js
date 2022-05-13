@@ -38,12 +38,13 @@ $(document).ready(function () {
     });
         //Validacion PERFIL
         $("#inputEmail4").on("input", function () {
-            if ($("#inputEmail4").val() == "") {
-                $("#mensajemail3").html("El Email es obligatorio!");
-            } else {
-                $("#mensajemail3").html("");
-            }
-        });
+        if($("#inputEmail4").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
+            $("#mensajemail3").html("El Email es incorrecto!");
+            return false;
+        }
+
+        $("#mensajemail3").html("");
+    });
         $("#inputPassword4").on("input", function () {
             if ($("#inputPassword4").val().length < 8) {
                 $("#mensajecontra3").html("La Contraseña tiene que tener 8 caracteres!");
