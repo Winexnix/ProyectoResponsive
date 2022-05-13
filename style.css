@@ -1,0 +1,461 @@
+/*Encabezado*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all 0.5s ease;
+    background: #000;
+    z-index: 100;
+}
+
+.nav.active {
+    background: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.nav.active .logo,
+.nav.active a,
+.nav.active .menu-btn i {
+    color: rgb(255, 255, 255);
+}
+
+.nav.active a:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    padding-left: 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight:bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+/*Pie de pagina*/
+
+
+#logopie {
+    color: #000;
+    padding-right: 1cm;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1cm;
+    background-color: rgb(163, 163, 163);
+}
+#letra{
+    display: flex;
+    flex-direction: row;
+}
+#menupie li {
+    list-style: none;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+/*Login*/
+#biniciar {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+
+}
+#login {
+    color: #fff;
+}
+
+#login a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+}
+
+#login a:hover {
+    
+    background:lightgray;
+    color: #000;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+#wenapardo{
+    display: flex;
+    justify-content: center;
+}
+#ibajo {
+    background-color: #000;
+    border-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#ibajo a {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    color: #000;
+    background: #fff;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+#ibajo a:hover {
+    padding: 5px 10px;
+    background: lightgray;
+    color: #000;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+#col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Registrarse*/
+#registrarse {
+    color: #fff;
+}
+
+#registrarse a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+}
+
+#registrarse a:hover {
+    background:lightgray;
+    color: #000;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+#ibajo2 {
+    background-color: #000;
+    border-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#ibajo2 a {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    color: #000;
+    background: #fff;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+#ibajo2 a:hover {
+    padding: 5px 10px;
+    background: lightgray;
+    color: #000;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+#col2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#biniciar2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+
+}
+
+/*Responsivo*/
+
+@media screen and (max-width:1980px) {
+    #webpay>img{
+     width: 100%;
+    }
+}
+@media screen and (max-width:1150px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background: rgb(121, 121, 121);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        transform: translateX(-100%);
+    }
+
+    .menu li {
+        margin: 15px 0;
+    }
+
+    .menu.active {
+        transform: translateX(0%);
+    }
+
+    #mapa>iframe {
+        display: none;
+    }
+    #webpay>img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:850px) {
+    #webpay>img{
+        width: 3cm;
+    }
+    #menupie{
+        font-size: 11px;
+    }
+    #logopie>h1{
+        font-size: 20px;
+    }
+    #footer{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+#deslizar{
+    height: 10cm;
+}
+#productos1,#productos2,#productos3,#productos4 {
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    width: 100%;
+    padding: 50px;
+    
+
+
+}
+
+#producto1,#producto2,#producto3{
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    width: 100%;
+    padding: 50px;
+
+
+}
+.card{
+    transition: 0.5s;
+}
+.card:hover{
+    padding: 5px 10px;
+    background: rgb(255, 255, 255);
+    color: #000;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#navegacion {
+    padding-top: 25px;
+    background-color: lightgray;
+    height: 100px;
+}
+
+#rango_precios {
+
+    width: 350px;
+    height: 55px;
+   
+    
+}
+#filtro{
+    padding-top: 3cm;
+    padding-left: 0px;
+    width: 800px ;
+    color:black;
+}
+
+#rango_precio{
+    padding-bottom: -100px;
+}
+#tabla{
+    padding-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#boton{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+#fondo{
+    background-color: lightgray;
+    
+    
+    
+}
+#titulo{
+    padding-top: 20px;
+    text-align: center;
+}
+
+#mascotasfoto{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
+}
+
+@media screen and (max-width:1450px){
+        #productos1,#columna2prod1,#columna3prod1,#columna3prod1{
+            display: none;
+
+        }
+       #filtro{
+        width: 600px;
+        
+        }
+        
+        #mascotasfoto >img{
+            width: 100000px;
+        }
+}
+@media screen and (max-width:1100px){
+    #productos2,#columna2prod2,#columna3prod2{
+        display: none;
+    }
+    #filtro{
+        width: 500px;
+        
+        }
+        #mascotasfoto >img{
+            width: 100000px;
+            padding-top: 10%;
+        }
+
+        
+}
+@media screen and (max-width:900px){
+    #producto1,#producto2,#producto3{
+        flex-direction: column;
+        align-items: center;
+    }
+    #filtro{
+        width: 300px;
+        
+        }
+        #mascotasfoto >img{
+            width: 900px;
+            padding-top: 22%;
+        }
+}
+@media screen and (max-width:600px){
+    #mascotasfoto >img{
+        width: 500px;
+        padding-top: 22%;
+    }
+}
+@media screen and (max-width:500px){
+    #mascotasfoto >img{
+        width: 450px;
+        padding-top: 22%;
+    }
+}
+@media screen and (max-width:430px){
+    #mascotasfoto >img{
+        width: 350px;
+        padding-top: 22%;
+    }
+}
+
+@media screen and (max-width:400px){
+#producto1,#producto2,#producto3{
+    flex-direction: column;
+    align-items: center;
+}
+#producto2,#producto3{
+    justify-content: center;
+}
+#filtro{
+    width: 200px;
+}
+#mascotasfoto >img{
+    padding-top: -100%;
+    width: 350px;
+}
+}
+.formo>h4{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
