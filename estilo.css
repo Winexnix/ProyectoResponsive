@@ -1,0 +1,430 @@
+/*Encabezado*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  transition: all 0.5s ease;
+  background: #000;
+  z-index: 100;
+}
+
+.nav.active {
+  background: rgb(0, 0, 0);
+  padding: 15px;
+}
+
+.nav.active .logo,
+.nav.active a,
+.nav.active .menu-btn i {
+  color: rgb(255, 255, 255);
+}
+
+.nav.active a:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  padding-left: 15px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin: 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight:bold;
+  transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+  padding: 5px 10px;
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
+}
+
+.menu-btn {
+  color: #fff;
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
+}
+/*CRUD STOCK DE PRODUCTOS*/
+#tabla-Stock{
+  display:flex;
+  justify-content: center;
+  flex-direction: column ;
+  background-color: lightgray;
+  padding-top: 50px;
+}
+
+#busqueda-Stock{
+    padding-bottom: 1cm;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1cm;
+}
+
+#botones-crud{
+  display:flex;
+  justify-content: space-around;
+  font-size: 1px;
+}
+.Gvt{
+
+  padding-bottom: 1cm;
+
+}
+.table-responsive{
+  display:flex;
+  justify-content: center;
+}
+.myTable {
+  border-collapse: collapse; 
+  width: 80%; 
+  border: 1px solid #ddd; 
+  font-size: 18px; 
+  padding: 12px 10% 12px 10%; 
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #fff;
+  }
+  
+  .myTable th, .myTable td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .myTable tr.tabla-header{
+    background-color: #000;
+    color: #fff;
+  } 
+
+  #navegacion-Stock {
+    padding-top: 25px;
+    background-color: lightgray;
+    height: 100px;
+}
+/* PERFIL */
+#cuadro-perfil{
+padding-top: 90px;
+}
+#info-perfil{
+  display: flex;
+  justify-content: center;
+  padding: 12px 10% 12px 10%; 
+  padding-top: 1cm;
+  background-color: lightgrey;
+  padding-bottom: 2cm;
+}
+
+#imagen-perfil{
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding-top: 1cm;
+}
+
+#switch{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+#titulosub{
+  display: flex;
+  justify-content: center;
+}
+
+
+/*Pie de pagina*/
+#logopie {
+  color: #000;
+  padding-right: 1cm;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1cm;
+  background-color: rgb(163, 163, 163);
+}
+#letra{
+  display: flex;
+  flex-direction: row;
+}
+#menupie li {
+  list-style: none;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+
+/*Login*/
+#biniciar {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1cm;
+  padding-left: 3cm;
+  padding-right: 3cm;
+
+}
+
+#login {
+  color: #fff;
+}
+
+#login a {
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+}
+
+#login a:hover {
+  
+  background:lightgray;
+  color: #000;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+#wenapardo{
+  display: flex;
+  justify-content: center;
+}
+#ibajo {
+  background-color: #000;
+  border-width: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#ibajo a {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #000;
+  background: #fff;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+#ibajo a:hover {
+  padding: 5px 10px;
+  background: lightgray;
+  color: #000;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+#col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+/*Registrarse*/
+#registrarse {
+  color: #fff;
+}
+
+#registrarse a {
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+}
+
+#registrarse a:hover {
+  background:lightgray;
+  color: #000;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+#ibajo2 {
+  background-color: #000;
+  border-width: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#ibajo2 a {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #000;
+  background: #fff;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+#ibajo2 a:hover {
+  padding: 5px 10px;
+  background: lightgray;
+  color: #000;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+#col2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+}
+
+#biniciar2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+
+}
+.formo>h4{
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.col-md-6>h4{
+  font-size: 15px;
+  padding-top: 5px;
+}
+.col-12>h4{
+  font-size: 15px;
+  padding-top: 5px;
+}
+.col-md-2>h4{
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+
+
+/*Responsivo*/
+
+@media screen and (max-width:650px) {
+  #titulosub > H1{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:1980px) {
+  #webpay>img{
+   width: 100%;
+  }
+}
+@media screen and (max-width:1150px) {
+  .menu-btn {
+      display: block;
+  }
+
+  .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100vh;
+      background: rgb(121, 121, 121);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      transform: translateX(-100%);
+  }
+
+  .menu li {
+      margin: 15px 0;
+  }
+
+  .menu.active {
+      transform: translateX(0%);
+  }
+
+  #mapa>iframe {
+      display: none;
+  }
+  #webpay>img{
+      width: 100%;
+  }
+}
+@media screen and (max-width:850px) {
+  #webpay>img{
+      width: 3cm;
+  }
+  #menupie{
+      font-size: 11px;
+  }
+  #logopie>h1{
+      font-size: 20px;
+  }
+  #footer{
+      display: flex;
+      align-items: center;
+  }
+  
+}
+@media screen and (max-width:800px) {
+  .myTable{
+      font-size: 14px;
+  }
+}
+
+
+
+/*
+@media screen and (max-width:1980px) {
+  .tabla-header{
+      width: 15rem;
+  }
+}
+@media screen and (max-width:1150px) {
+  .table-responsive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .tabla-header{
+      padding-bottom: 25px;
+  }
+  .tabla-header{
+      width: 18rem;
+  }
+}
+@media screen and (max-width:400px) {
+  .tabla-header{
+      width: 13rem;
+  }
+}
+*/
